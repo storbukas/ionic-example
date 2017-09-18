@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, LoadingController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 
 import { Users, Errors } from '../../providers'
 import { GithubUserPage } from '../github-user/github-user';
 
 import 'rxjs/add/operator/finally';
 
-@IonicPage()
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html'
