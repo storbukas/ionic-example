@@ -9,13 +9,14 @@ import { MyApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { GithubUserPage } from '../pages/github-user/github-user';
 
-import { Helpers, Users, Errors } from '../providers';
+import { Users, Errors, NumberFormatter } from '../providers';
 
 @NgModule({
   declarations: [
     MyApp,
     WelcomePage,
     GithubUserPage,
+    NumberFormatter,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,6 @@ import { Helpers, Users, Errors } from '../providers';
   providers: [
     StatusBar,
     SplashScreen,
-    Helpers,
     Users,
     Errors,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

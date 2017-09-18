@@ -1,8 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
-@Injectable()
-export class Helpers {
-  public static numberFormatter(number: number): any {
-      return number > 999 ? (number / 1000).toFixed(1) + 'k' : number;
+@Pipe({
+  name: 'numberFormatter'
+})
+export class NumberFormatter implements PipeTransform {
+  transform(number: number): any {
+    return number > 999 ? ( number / 1000 ).toFixed(1) + 'k' : number;
   }
 }

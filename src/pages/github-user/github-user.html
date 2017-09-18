@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>@{{user.login}}</ion-title>
+    <ion-title>@{{ user.login }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -14,11 +14,11 @@
 
   <ion-scroll scrollY="true">
     <div class="item-detail" padding>
-      <h2>{{user.name}}</h2>
+      <h2>{{ user.name }}</h2>
 
-      <p *ngIf="user.location"><b>Location:</b> {{user.location}}</p>
-      <p *ngIf="user.company"><b>Company:</b> {{user.company}}</p>
-      <p *ngIf="user.bio"><b>Bio:</b> {{user.bio}}</p>
+      <p *ngIf="user.location"><b>Location:</b> {{ user.location }}</p>
+      <p *ngIf="user.company"><b>Company:</b> {{ user.company }}</p>
+      <p *ngIf="user.bio"><b>Bio:</b> {{ user.bio }}</p>
     </div>
   </ion-scroll>
 
@@ -26,15 +26,15 @@
     <div class="bottom">
        <ul>
           <li>
-             <i>{{user.followers}}</i>
+             <i>{{ user.followers | numberFormatter }}</i>
              <span>Followers</span>
           </li>
           <li>
-             <i>{{user.public_repos}}</i>
+             <i>{{ user.public_repos | numberFormatter }}</i>
              <span>Repositories</span>
           </li>
           <li>
-             <i>{{user.following}}</i>
+             <i>{{ user.following | numberFormatter }}</i>
              <span>Following</span>
           </li>
        </ul>
