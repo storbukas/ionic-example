@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavParams } from 'ionic-angular';
 
 import { Helpers } from '../../providers';
 
@@ -12,7 +12,6 @@ export class GithubUserPage {
   user: any;
 
   constructor(
-              private navCtrl: NavController,
               private navParams: NavParams,
             ) {
     this.user = navParams.get('user');

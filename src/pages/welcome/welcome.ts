@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { Http } from '@angular/http';
 import { IonicPage, NavController, LoadingController } from 'ionic-angular';
 
 import { Users, Errors } from '../../providers'
-import { User } from '../../models';
 import { GithubUserPage } from '../github-user/github-user';
 
 import 'rxjs/add/operator/finally';
