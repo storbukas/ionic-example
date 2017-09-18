@@ -14,4 +14,4 @@ import { GithubUserPage } from './github-user';
     GithubUserPage,
   ]
 })
-export class ItemDetailPageModule { }
+export class GithubUserPageModule { }

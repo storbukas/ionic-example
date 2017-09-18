@@ -14,7 +14,7 @@ export class GithubUserPage {
   constructor(
               private navParams: NavParams,
             ) {
-    this.user = navParams.get('user');
+    this.user = this.navParams.get('user');
 
     this.user.following = Helpers.numberFormatter(this.user.following);
     this.user.followers = Helpers.numberFormatter(this.user.followers);
