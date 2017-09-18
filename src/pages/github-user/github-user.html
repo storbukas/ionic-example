@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>@{{user.login}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="item-profile" text-center #profilePic
+       [style.background-image]="'url(' + user.avatar_url + ')'">
+  </div>
+
+  <ion-scroll scrollY="true">
+    <div class="item-detail" padding>
+      <h2>{{user.name}}</h2>
+
+      <p *ngIf="user.location"><b>Location:</b> {{user.location}}</p>
+      <p *ngIf="user.company"><b>Company:</b> {{user.company}}</p>
+      <p *ngIf="user.bio"><b>Bio:</b> {{user.bio}}</p>
+    </div>
+  </ion-scroll>
+
+  <div text-center>
+    <div class="bottom">
+       <ul>
+          <li>
+             <i>{{user.followers}}</i>
+             <span>Followers</span>
+          </li>
+          <li>
+             <i>{{user.public_repos}}</i>
+             <span>Repositories</span>
+          </li>
+          <li>
+             <i>{{user.following}}</i>
+             <span>Following</span>
+          </li>
+       </ul>
+     </div>
+  </div>
+
+</ion-content>

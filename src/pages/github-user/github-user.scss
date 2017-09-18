@@ -1,0 +1,50 @@
+page-github-user {
+  .item-profile {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 55vh;
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: color($colors, primary);
+    color: white;
+
+    ul {
+      direction: ltr;
+      padding-left: 0;
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 3rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    i {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-style: normal;
+      display: block;
+    }
+
+    span {
+      font-size: 0.844rem;
+      letter-spacing: 0.0625rem;
+      color: lighten(color($colors, primary), 17%);
+    }
+  }
+
+  ion-scroll {
+      white-space: nowrap;
+      height: 25vh;
+  }
+}

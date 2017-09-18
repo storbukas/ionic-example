@@ -1,8 +1,8 @@
 {
-  "name": "githubApi",
+  "name": "GithubAPI",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Lars Erik Storbukås",
+  "homepage": "https://github.com/storbukas",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -36,5 +36,5 @@
     "ionic": "3.10.3",
     "typescript": "2.3.4"
   },
-  "description": "An Ionic project"
+  "description": "Fetches Github user data from the Github API"
 }

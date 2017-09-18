@@ -1,0 +1,20 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro">
+      Search for a Github user
+    </div>
+  </div>
+  <div padding>
+    <form #form="ngForm" (ngSubmit)="searchGithubUsername()">
+      <ion-item>
+        <ion-input text-center type="text" maxlength="39" value=""
+                   [(ngModel)]="username" name="username" required>
+        </ion-input>
+      </ion-item>
+
+      <button ion-button block type="submit" [disabled]="!form.valid">Search</button>
+  </form>
+  </div>
+</ion-content>
